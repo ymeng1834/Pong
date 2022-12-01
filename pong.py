@@ -8,8 +8,8 @@ import time
 import random
 import math
 
-user1x, user2x, user1points, user2points = 0
-ballx, bally, ballvx, ballvy = 0
+user1x, user2x, user1points, user2points = 0, 0, 0, 0
+ballx, bally, ballvx, ballvy = 0, 0, 0, 0
 turn = ''
 endGame = False
 
@@ -24,7 +24,7 @@ def draw_frame():
     turtle.width(1)
     turtle.up()
     turtle.goto(-turtle.window_width()/2,0)
-    for i in range(64):
+    for i in range(32):
         turtle.down()
         turtle.forward(10)
         turtle.up()
